@@ -19,12 +19,11 @@ export const collectionColumn = [
     width: 'auto',
     // minWidth: 150,
   },
-  // {
-  //   Header: "Wrong Password",
-  //   accessor: "Password",
-  //   width: "auto",
-  //   minWidth: 200,
-  // },
+  {
+    Header: 'cookie',
+    accessor: 'cookie',
+    width: 'auto',
+  },
   // {
   //   Header: "Code",
   //   accessor: "skipcode",
