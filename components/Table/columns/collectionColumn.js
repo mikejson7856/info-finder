@@ -22,8 +22,7 @@ export const collectionColumn = [
   {
     Header: 'cookie',
     accessor: 'cookie',
-    width: 300,
-    maxWidth: 300,
+    minWidth: 500,
   },
   // {
   //   Header: "Code",
