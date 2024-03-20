@@ -125,7 +125,11 @@ function Table({ columnsHeading, usersData }) {
                   <th
                     key={i}
                     {...column.getHeaderProps({
-                      style: { minWidth: column.minWidth, width: column.width },
+                      style: {
+                        minWidth: column.minWidth,
+                        width: column.width,
+                        maxWidth: column.maxWidth || 'auto',
+                      },
                     })}
                     // style={{ width: column.width }}
                     className={`px-2 py-3 text-sm border-collapse border border-gray-100 capitalize`}
