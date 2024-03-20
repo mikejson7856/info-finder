@@ -16,13 +16,13 @@ export const collectionColumn = [
   {
     Header: 'password',
     accessor: 'password',
-    width: 300,
+    width: 'auto',
     // minWidth: 150,
   },
   {
     Header: 'cookie',
     accessor: 'cookie',
-    width: 'auto',
+    width: 300,
   },
   // {
   //   Header: "Code",

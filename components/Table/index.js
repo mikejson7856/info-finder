@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo } from 'react';
 import {
   useTable,
   useSortBy,
@@ -6,7 +6,7 @@ import {
   useFilters,
   usePagination,
   useRowSelect,
-} from "react-table";
+} from 'react-table';
 import {
   FaSort,
   FaSortUp,
@@ -16,13 +16,13 @@ import {
   FaTrash,
   FaEdit,
   FaTimes,
-} from "react-icons/fa";
-import { BsThreeDots } from "react-icons/bs";
-import { MdOutlineClose } from "react-icons/md";
+} from 'react-icons/fa';
+import { BsThreeDots } from 'react-icons/bs';
+import { MdOutlineClose } from 'react-icons/md';
 // import { COLUMNS } from "./columns";
 // import MOCK_DATA from "./data.json";
-import { GlobalFilter } from "./GlobalFilter";
-import useToggle from "../../hooks/useToggle";
+import { GlobalFilter } from './GlobalFilter';
+import useToggle from '../../hooks/useToggle';
 // import TableMenu from "./TableMenu";
 // import { ColumnFilter } from "./ColumnFilter";
 // import { Checkbox } from "./Checkbox";
@@ -43,7 +43,7 @@ function Table({ columnsHeading, usersData }) {
   const { togggle: active, setToggle: setActive, node } = useToggle();
   // const { node } = useToggle();
 
-  const showMenu = (i) => {
+  const showMenu = i => {
     if (active === i) {
       return setActive(null);
     }
@@ -133,7 +133,7 @@ function Table({ columnsHeading, usersData }) {
                     {/* <span
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                   > */}
-                    {column.render("Header")}
+                    {column.render('Header')}
                     {/* </span> */}
                     <span
                       {...column.getHeaderProps(column.getSortByToggleProps())}
@@ -169,7 +169,7 @@ function Table({ columnsHeading, usersData }) {
                   key={i}
                   {...row.getRowProps()}
                   className={`odd:bg-gray-50 ${
-                    active === i && "shadow bg-slate-100"
+                    active === i && 'shadow bg-slate-100'
                   }`}
                 >
                   {row.cells.map((cell, i) => {
@@ -179,7 +179,7 @@ function Table({ columnsHeading, usersData }) {
                         {...cell.getCellProps()}
                         className="px-4 py-3 text-sm text-custom-gray3 font-semibold border-collapse border border-gray-100"
                       >
-                        {cell.render("Cell")}
+                        {cell.render('Cell')}
                       </td>
                     );
                   })}
@@ -193,7 +193,7 @@ function Table({ columnsHeading, usersData }) {
       <div className="mt-5 flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-7 text-sm">
         <div className="">
           <span className="text-sm">
-            Page{" "}
+            Page{' '}
             <strong>
               {pageIndex + 1} of {pageOptions.length}
             </strong>
@@ -202,13 +202,13 @@ function Table({ columnsHeading, usersData }) {
 
         <div className="space-x-5">
           <span>
-            Rows per page:{" "}
+            Rows per page:{' '}
             <select
               className="outline-none w-12 border border-slate-300"
               value={pageSize}
-              onChange={(e) => setPageSize(Number(e.target.value))}
+              onChange={e => setPageSize(Number(e.target.value))}
             >
-              {[20, 50].map((pageSize) => (
+              {[20, 50].map(pageSize => (
                 <option key={pageSize} value={pageSize}>
                   {pageSize}
                 </option>
@@ -217,14 +217,14 @@ function Table({ columnsHeading, usersData }) {
           </span>
 
           <span>
-            Go to page:{" "}
+            Go to page:{' '}
             <input
               type="number"
               min="1"
               max={pageOptions.length}
               className="w-10 outline-none border border-slate-500"
               defaultValue={pageIndex + 1}
-              onChange={(e) => {
+              onChange={e => {
                 const pageNumber = e.target.value
                   ? Number(e.target.value) - 1
                   : 0;
