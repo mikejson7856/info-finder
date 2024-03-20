@@ -16,7 +16,7 @@ export const collectionColumn = [
   {
     Header: 'password',
     accessor: 'password',
-    width: 'auto',
+    width: 300,
     // minWidth: 150,
   },
   {
