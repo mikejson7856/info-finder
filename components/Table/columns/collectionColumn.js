@@ -1,22 +1,22 @@
-import Link from 'next/link';
-import { getTimeDistance } from '../../../utils/getTimeDistance';
-import DeleteCollection from '../../DeleteCollection';
+import Link from "next/link";
+import { getTimeDistance } from "../../../utils/getTimeDistance";
+import DeleteCollection from "../../DeleteCollection";
 
 export const collectionColumn = [
   {
-    Header: 'website',
-    accessor: 'site',
-    width: 'auto',
+    Header: "website",
+    accessor: "site",
+    width: "auto",
   },
   {
-    Header: 'email',
-    accessor: 'email',
-    width: 'auto',
+    Header: "email",
+    accessor: "email",
+    width: "auto",
   },
   {
-    Header: 'password',
-    accessor: 'password',
-    width: 'auto',
+    Header: "password",
+    accessor: "password",
+    width: "auto",
     // minWidth: 150,
   },
   // {
@@ -24,11 +24,11 @@ export const collectionColumn = [
   //   accessor: 'cookie',
   //   minWidth: 500,
   // },
-  // {
-  //   Header: "Code",
-  //   accessor: "skipcode",
-  //   width: "auto",
-  // },
+  {
+    Header: "Code",
+    accessor: "skipcode",
+    width: "auto",
+  },
   // {
   //   Header: "Validity",
   //   accessor: "validity",
@@ -121,21 +121,21 @@ export const collectionColumn = [
   //   ),
   // },
   {
-    Header: 'Ip',
-    accessor: 'ip',
-    width: 'auto',
+    Header: "Ip",
+    accessor: "ip",
+    width: "auto",
   },
   {
-    Header: 'Agent',
-    accessor: 'agent',
+    Header: "Agent",
+    accessor: "agent",
     // width: "auto",
     minWidth: 500,
   },
   {
-    Header: 'Time',
-    accessor: 'createdAt',
+    Header: "Time",
+    accessor: "createdAt",
     disableSortBy: true,
-    width: 'auto',
+    width: "auto",
     // minWidth: 150,
     Cell: ({ row }) => (
       <div className="flex justify-center items-center">
