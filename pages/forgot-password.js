@@ -20,8 +20,11 @@ function ForgotPasswordPage() {
     password: "",
   };
 
-  const { mutate: phoneMutate, isLoading: phoneIsLoading } = usePasswordReset({
-    path: "/change/password/otp/once",
+  // const { mutate: phoneMutate, isLoading: phoneIsLoading } = usePasswordReset({
+  //   path: "/change/password/otp/once",
+  // });
+  const { mutate: emailMutate, isLoading: emailIsLoading } = usePasswordReset({
+    path: "/email/otp",
   });
 
   const { mutate: otpMutate, isLoading: otpIsLoading } = usePasswordReset({
@@ -95,7 +98,7 @@ function ForgotPasswordPage() {
                   <div className="text-sm gap-y-5 md:gap-y-7">
                     <div className="min-w-[300px] max-w-[320px] lg:w-[350px] space-y-4">
                       {step === 1 && (
-                        <PhoneNumberForm isLoading={phoneIsLoading} />
+                        <PhoneNumberForm isLoading={emailIsLoading} />
                       )}
                       {step === 2 && (
                         <OtpForm
