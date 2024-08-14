@@ -42,7 +42,7 @@ function ForgotPasswordPage() {
         username: values.username,
         phone: values.phone,
       };
-      // console.log("step 1 values", values1);
+      console.log("step 1 values", values1);
 
       phoneMutate(values1, {
         onSuccess: () => {
@@ -54,7 +54,7 @@ function ForgotPasswordPage() {
         username: values.username,
         otp: values.otp,
       };
-      // console.log("step 2 values", values2);
+      console.log("step 2 values", values2);
       otpMutate(values2, {
         onSuccess: () => {
           setStep(3);
@@ -66,7 +66,7 @@ function ForgotPasswordPage() {
         otp: values.otp,
         password: values.password,
       };
-      // console.log("step 3 values", values3);
+      console.log("step 3 values", values3);
       passwordMutate(values3, {
         onSuccess: () => {
           formik.resetForm();
