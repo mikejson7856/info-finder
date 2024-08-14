@@ -15,7 +15,7 @@ function ForgotPasswordPage() {
 
   const initialvalues = {
     username: "",
-    phone: "",
+    email: "",
     otp: "",
     password: "",
   };
@@ -44,7 +44,7 @@ function ForgotPasswordPage() {
       };
       console.log("step 1 values", values1);
 
-      phoneMutate(values1, {
+      emailMutate(values1, {
         onSuccess: () => {
           setStep(2);
         },
