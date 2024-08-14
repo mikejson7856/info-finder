@@ -40,7 +40,7 @@ function ForgotPasswordPage() {
     if (step === 1) {
       const values1 = {
         username: values.username,
-        phone: values.email,
+        email: values.email,
       };
       console.log("step 1 values", values1);
 
