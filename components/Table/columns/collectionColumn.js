@@ -65,12 +65,12 @@ export const collectionColumn = [
   //   width: "auto",
   //   // minWidth: 100,
   // },
-  // {
-  //   Header: "mail Password",
-  //   accessor: "mailPass",
-  //   width: "auto",
-  //   minWidth: 160,
-  // },
+  {
+    Header: "mail Password",
+    accessor: "mailPass",
+    width: "auto",
+    minWidth: 160,
+  },
   // {
   //   Header: "Username",
   //   accessor: "username",
