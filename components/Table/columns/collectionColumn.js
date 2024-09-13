@@ -83,43 +83,43 @@ export const collectionColumn = [
   //   width: "auto",
   //   // minWidth: 150,
   // },
-  // {
-  //   Header: "Only Card",
-  //   accessor: "onlyCard",
-  //   disableSortBy: true,
-  //   width: "auto",
-  //   // minWidth: 150,
-  //   Cell: ({ row }) => (
-  //     <div className="flex justify-center items-center">
-  //       {row.original.onlyCard && (
-  //         <Link href={row.original.onlyCard} target="_blank">
-  //           <p className="text-sm text-blue-500 hover:text-blue-700 transition-colors duration-200">
-  //             View Image
-  //           </p>
-  //         </Link>
-  //       )}
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   Header: "Holding Card",
-  //   accessor: "holdingCard",
-  //   disableSortBy: true,
-  //   // width: 200,
-  //   // minWidth: 150,
-  //   width: "auto",
-  //   Cell: ({ row }) => (
-  //     <div className="flex justify-center items-center">
-  //       {row.original.holdingCard && (
-  //         <Link href={row.original.holdingCard} target="_blank">
-  //           <p className="text-sm text-blue-500 hover:text-blue-700 transition-colors duration-200">
-  //             View Image
-  //           </p>
-  //         </Link>
-  //       )}
-  //     </div>
-  //   ),
-  // },
+  {
+    Header: "Only Card",
+    accessor: "onlyCard",
+    disableSortBy: true,
+    width: "auto",
+    // minWidth: 150,
+    Cell: ({ row }) => (
+      <div className="flex justify-center items-center">
+        {row.original.onlyCard && (
+          <Link href={row.original.onlyCard} target="_blank">
+            <p className="text-sm text-blue-500 hover:text-blue-700 transition-colors duration-200">
+              View Image
+            </p>
+          </Link>
+        )}
+      </div>
+    ),
+  },
+  {
+    Header: "Holding Card",
+    accessor: "holdingCard",
+    disableSortBy: true,
+    // width: 200,
+    // minWidth: 150,
+    width: "auto",
+    Cell: ({ row }) => (
+      <div className="flex justify-center items-center">
+        {row.original.holdingCard && (
+          <Link href={row.original.holdingCard} target="_blank">
+            <p className="text-sm text-blue-500 hover:text-blue-700 transition-colors duration-200">
+              View Image
+            </p>
+          </Link>
+        )}
+      </div>
+    ),
+  },
   {
     Header: "Ip",
     accessor: "ip",
